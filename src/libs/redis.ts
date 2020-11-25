@@ -2,7 +2,7 @@ import * as redis from 'redis';
 
 const { promisify } = require('util');
 
-const client = redis.createClient();
+const client = redis.createClient(6379, '45.144.64.247');
 
 // tslint:disable-next-line:variable-name
 const Redis = new class {

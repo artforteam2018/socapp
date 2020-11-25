@@ -9,4 +9,5 @@ export const initialize = (application: Express.Application) => {
     application[r.method](r.path, r.f);
   });
 
+  application.get('/', (req, res) =>  res.status(200).end('hi'));
 };
